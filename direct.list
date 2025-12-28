@@ -75,10 +75,3 @@ DOMAIN-KEYWORD,ivi
 DOMAIN-KEYWORD,okko
 DOMAIN-SUFFIX,more.tv
 DOMAIN-SUFFIX,kion.ru
-
-# Google Auth & Services
-DOMAIN-SUFFIX,google.com
-DOMAIN-SUFFIX,googleapis.com
-DOMAIN-SUFFIX,gstatic.com
-DOMAIN-SUFFIX,googleusercontent.com
-
