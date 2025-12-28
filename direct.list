@@ -1,0 +1,77 @@
+# === 1. System & Connectivity (Core services) ===
+# Local Area Network (Printers, Routers, Smart Home)
+IP-CIDR,192.168.0.0/16,DIRECT
+IP-CIDR,10.0.0.0/8,DIRECT
+IP-CIDR,127.0.0.0/8,DIRECT
+IP-CIDR,172.16.0.0/12,DIRECT
+IP-CIDR6,::1/128,DIRECT
+# Time synchronization (NTP)
+DOMAIN-KEYWORD,ntp
+DOMAIN-SUFFIX,time.apple.com
+DOMAIN-SUFFIX,pool.ntp.org
+
+# === 2. Push Notifications & Connectivity Check ===
+# Essential for instant messages and Wi-Fi login pages
+DOMAIN-KEYWORD,connectivitycheck
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,msftconnecttest.com
+DOMAIN-SUFFIX,mtalk.google.com
+DOMAIN-KEYWORD,push.apple.com
+
+# === 3. Apple Ecosystem ===
+# App Store, iCloud, Maps, and Updates
+DOMAIN-KEYWORD,apple
+DOMAIN-KEYWORD,icloud
+DOMAIN-SUFFIX,apple.com
+DOMAIN-SUFFIX,itunes.com
+DOMAIN-SUFFIX,mzstatic.com
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,aaplimg.com
+DOMAIN-SUFFIX,apple-cloudkit.com
+DOMAIN-SUFFIX,cdn-apple.com
+USER-AGENT,com.apple.appstored*
+USER-AGENT,Stored*
+USER-AGENT,AppStore*
+
+# === 4. RU Segment - Common Domains & Gov ===
+# Generic Russian domains
+DOMAIN-SUFFIX,ru
+DOMAIN-SUFFIX,su
+DOMAIN-SUFFIX,xn--p1ai
+# Government & Public Services
+DOMAIN-SUFFIX,gosuslugi.ru
+DOMAIN-SUFFIX,mos.ru
+DOMAIN-SUFFIX,nalog.gov.ru
+
+# === 5. RU Segment - Banking & Finance ===
+DOMAIN-KEYWORD,sberbank
+DOMAIN-KEYWORD,sber
+DOMAIN-KEYWORD,tinkoff
+DOMAIN-KEYWORD,tbank
+DOMAIN-KEYWORD,vtb
+DOMAIN-KEYWORD,alfabank
+DOMAIN-KEYWORD,raiffeisen
+DOMAIN-KEYWORD,gazprombank
+DOMAIN-SUFFIX,nspk.ru
+DOMAIN-SUFFIX,mir-vsem.ru
+DOMAIN-SUFFIX,cbr.ru
+
+# === 6. RU Segment - IT, Mail & E-commerce ===
+DOMAIN-KEYWORD,yandex
+DOMAIN-KEYWORD,vkontakte
+DOMAIN-KEYWORD,vk
+DOMAIN-KEYWORD,mail.ru
+DOMAIN-KEYWORD,ok.ru
+DOMAIN-KEYWORD,ozon
+DOMAIN-KEYWORD,wildberries
+DOMAIN-KEYWORD,avito
+DOMAIN-SUFFIX,2gis.ru
+DOMAIN-SUFFIX,kaspersky.com
+DOMAIN-SUFFIX,hh.ru
+
+# === 7. RU Segment - Streaming & Entertainment ===
+DOMAIN-KEYWORD,kinopoisk
+DOMAIN-KEYWORD,ivi
+DOMAIN-KEYWORD,okko
+DOMAIN-SUFFIX,more.tv
+DOMAIN-SUFFIX,kion.ru
